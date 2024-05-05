@@ -36,8 +36,9 @@ futures-io = { version = "0.3", default-features = false, features = ["std"] }
 pin-project-lite = "0.2"
 
 [dependencies.tungstenite]
-version = "0.15.0"
-default-features = false
+git = "https://github.com/ajoslin/tungstenite-rs"
+branch = "permessage-deflate"
+features = ["deflate"]
 
 [dependencies.async-std]
 optional = true
